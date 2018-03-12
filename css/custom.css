@@ -5,6 +5,12 @@
 *:after {
   box-sizing: inherit;
 }
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+}
+
 .grid-wrapper {
   width: 100%;
   max-width: 800px;
@@ -76,6 +82,7 @@ label {
   padding: 0.5em;
   font-size: 1em;
   line-height: 1.5;
+  letter-spacing: 0;
   margin-bottom: 1em;
   border-bottom: 2px dashed #2fc2ef;
   text-align: left;
