@@ -21,7 +21,6 @@
     }, .2);
   }
 
-  // https://stackoverflow.com/questions/40843773/localstorage-keeps-overwriting-my-data
   function saveTweet( e ) {
     e.preventDefault();
     // retrieve the contents of the textarea
