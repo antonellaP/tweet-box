@@ -5,20 +5,31 @@
   const tweetListContainer = document.querySelector('#tweet-list');
 
   function animateTweet( tweet ) {
-    TweenMax.set(tweet, {autoAlpha: 0, y: 200});
+    TweenMax.set(tweet, {
+      autoAlpha: 0, 
+      y: 200,
+      scale: 0.1
+    });
     TweenMax.to(tweet, .3, {
       autoAlpha: 1,
       y: 0,
+      scale: 1,
       ease:Back.easeOut
     });
   }
 
   function animateTweetList( tweetList ) {
-    TweenMax.set(tweetList, {autoAlpha: 0});
+    TweenMax.set(tweetList, {
+      autoAlpha: 0, 
+      scale: 0.1, 
+      y: -1000
+    });
     TweenMax.staggerTo(tweetList, .5, {
       autoAlpha: 1,
+      scale: 1,
+      y: 0,
       ease:Back.easeOut
-    }, .2);
+    }, -.2);
   }
 
   function saveTweet( e ) {
